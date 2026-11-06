@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root{color-scheme:dark;--bg:#101010;--panel:#191919;--panel2:#222;--text:#f5f5f5;--muted:#a1a1a1;--green:#1ed760;--line:#303030}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,sans-serif;padding-bottom:150px}
+.topbar{height:64px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#101010ed;backdrop-filter:blur(12px);z-index:3;border-bottom:1px solid #ffffff0b}
+.brand{display:flex;align-items:center;gap:9px;font-size:22px;font-weight:800;letter-spacing:-1px}.brand-mark{color:var(--green);font-size:27px}
+.icon-btn{border:0;background:var(--panel2);color:white;border-radius:50%;width:40px;height:40px;font-size:27px;line-height:1}
+main{max-width:760px;margin:auto;padding:22px 18px 30px}
+.welcome{border-radius:24px;padding:27px 23px 25px;background:radial-gradient(ellipse at 85% 15%,#285c3c 0,transparent 45%),linear-gradient(135deg,#202820,#171717 65%);min-height:245px}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:1.8px;color:var(--green);margin:0 0 10px}
+h1{font-size:clamp(40px,11vw,58px);line-height:.98;letter-spacing:-2.7px;margin:0;font-weight:800}h1 span{color:var(--green)}
+.sub{color:#c5c5c5;font-size:14px;margin:13px 0 20px}
+.primary-btn,.secondary-btn{border:0;border-radius:30px;padding:12px 18px;font-weight:800;font-size:13px}.primary-btn{background:var(--green);color:#07140b}.secondary-btn{background:#303030;color:white}
+.section{margin-top:30px}.section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:15px}.section-heading h2{font-size:23px;margin:0;letter-spacing:-.7px}.section-heading .eyebrow{margin-bottom:5px}.count{font-size:11px;color:var(--muted);padding-bottom:4px}
+.empty{border:1px dashed #444;border-radius:18px;padding:28px 20px;text-align:center;background:#171717}.empty-icon{margin:auto auto 12px;width:48px;height:48px;border-radius:15px;background:#243c2c;color:var(--green);display:grid;place-items:center;font-size:27px}.empty strong{font-size:15px}.empty p{font-size:12px;line-height:1.5;color:var(--muted);max-width:250px;margin:8px auto 17px}
+.song-list{display:flex;flex-direction:column;gap:5px}.song{display:flex;align-items:center;gap:12px;padding:9px;border-radius:12px}.song:active{background:#242424}.song-art,.track-art{width:45px;height:45px;flex:none;border-radius:9px;background:linear-gradient(135deg,#284d37,#1c2921);display:grid;place-items:center;color:var(--green);font-size:23px}.song-details{min-width:0;flex:1}.song-details strong,.track-info strong{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.song-details span,.track-info span{display:block;font-size:11px;color:var(--muted);margin-top:4px}.song-play{border:0;background:transparent;color:var(--green);font-size:18px;padding:8px}
+.player{position:fixed;bottom:0;left:0;right:0;background:#171717f5;backdrop-filter:blur(18px);border-top:1px solid #333;padding:7px 16px calc(9px + env(safe-area-inset-bottom));z-index:5}
+.progress-wrap{max-width:760px;margin:auto}.progress-wrap input{width:100%;height:3px;accent-color:var(--green);display:block}
+.player-main{max-width:760px;margin:7px auto 0;display:flex;align-items:center;gap:12px}.track-art{width:42px;height:42px}.track-info{min-width:0;flex:1}.track-info strong{font-size:12px}.track-info span{font-size:10px}
+.control-btn,.play-btn{border:0;color:white;background:transparent;font-size:18px;padding:7px}.play-btn{background:var(--green);color:#07140b;width:37px;height:37px;border-radius:50%;font-size:14px;font-weight:900}
+.time-row{max-width:760px;margin:2px auto 0;display:flex;justify-content:space-between;color:#888;font-size:9px}
+.toast{position:fixed;left:50%;bottom:145px;transform:translate(-50%,12px);background:#eee;color:#111;padding:10px 15px;border-radius:20px;font-size:12px;font-weight:700;opacity:0;pointer-events:none;transition:.2s;z-index:8;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(min-width:600px){main{padding-top:30px}.welcome{padding:36px}.player{padding-left:24px;padding-right:24px}}
